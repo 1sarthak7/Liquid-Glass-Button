@@ -5,6 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Liquid-Glass-Button/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
