@@ -4,7 +4,7 @@ import { TubesBackground } from "@/components/ui/neon-flow"
 import { useTheme } from "@/components/theme-provider"
 
 function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
   const [isDark, setIsDark] = useState(false)
 
   // Track resolved dark state via DOM class observer

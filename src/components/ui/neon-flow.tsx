@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from "@/lib/utils";
 
 // Helper for random colors
@@ -21,7 +20,6 @@ export function TubesBackground({
   enableClickInteraction = true 
 }: TubesBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
   const tubesRef = useRef<any>(null);
 
   useEffect(() => {
@@ -51,7 +49,6 @@ export function TubesBackground({
         });
 
         tubesRef.current = app;
-        setIsLoaded(true);
 
         // Handle resize if the library doesn't automatically
         const handleResize = () => {
